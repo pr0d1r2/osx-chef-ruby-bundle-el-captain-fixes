@@ -24,6 +24,4 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-execute "bundle config build.libv8 --with-system-v8" do
-  user node['current_user']
-end
+bundle_config "build.libv8 --with-system-v8"

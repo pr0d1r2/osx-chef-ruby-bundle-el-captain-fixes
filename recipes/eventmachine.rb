@@ -24,6 +24,4 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-execute "bundle config build.eventmachine --with-cppflags=-I$(brew --prefix openssl)/include" do
-  user node['current_user']
-end
+bundle_config "build.eventmachine --with-cppflags=-I$(brew --prefix openssl)/include"
